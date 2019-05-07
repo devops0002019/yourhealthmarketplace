@@ -1,7 +1,7 @@
-document.documentElement.style .setProperty('--primary', '#7A838E');
+document.documentElement.style .setProperty('--primary', '#2b2b2b');
 document.documentElement.style .setProperty('--secondary', '#ddd');
 document.documentElement.style .setProperty('--tertiary', '#FAFAFA');
-document.documentElement.style .setProperty('--quaternary', '#7a7aff');
+document.documentElement.style .setProperty('--quaternary', 'orange');
 document.documentElement.style .setProperty('--border', '#d8d8d8');
 document.documentElement.style .setProperty('--page-max-width', '1366px');
 document.documentElement.style .setProperty('--navbar-background', '#fff');
@@ -40,11 +40,20 @@ const footer_data = [
 ]; 
 function footer_template(foot) {
     return `
+
     <div class="grid set-cols-1">
+
+       
         <div class="column start-vertical-between">
             <p class="copyright">Copyright 2019.<span class="company-name"></span>. All Rights Reserved.</p>
             <p<b>Disclaimer:</b>Find Insurance Quotes strives to keep its information accurate and up to date. This information may be different than what you see when you visit a financial institution, service provider or specific product’s site. All financial products, shopping products and services are presented without warranty. When evaluating offers, please review the financial institution’s Terms and Conditions. Pre-qualified offers are not binding. If you find discrepancies with your credit score or information from your credit report, please contact TransUnion® directly.</p>
         </div>
+
+        <ul class="column menu-start">
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Term of Use</a></li>
+        </ul>
+        
     </div>
   `;
 }

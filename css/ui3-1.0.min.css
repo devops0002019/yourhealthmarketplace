@@ -830,6 +830,22 @@ column
     --insert-text-align: center;
 }
 
+
+[class*="column"][class*="menu-start"] {
+    --insert-display: flex;
+    --insert-justify-content: start;
+    --insert-align-items: start;
+    --insert-flex-direction: row;
+	--insert-text-align: start;
+	--insert-width: 100%;
+	--a-margin: 8px;
+}
+
+
+
+
+
+
 .start-vertical-between {
     display: -webkit-box;
     display: -ms-flexbox;
