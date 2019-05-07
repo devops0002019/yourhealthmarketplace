@@ -1,0 +1,17 @@
+  .button {
+      -webkit-box-shadow: var(--boxshadow) !important;
+      box-shadow: var(--boxshadow) !important;
+  }
+
+  [class*="column"].homeheadline {
+      --insert-min-height: 100px !important;
+  }
+
+
+  [class*="column"].header-title {
+      text-align: center;
+      --h1-color: #000 !important;
+  }
+
+
+
