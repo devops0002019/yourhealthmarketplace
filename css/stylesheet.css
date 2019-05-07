@@ -13,5 +13,13 @@
       --h1-color: #000 !important;
   }
 
+  .company-name {
+      font-size:1em !important;
+	--company-name:'Your Health Marketplace';
+  }
+
+  .company-name:after {
+     content: var(--company-name) !important;
+  }
 
 

@@ -55,7 +55,9 @@
     --navbar-text-color:#000;
 
     --footer-background::#fafafa;
-    --footer-text-color:#000;
+	--footer-text-color:#000;
+	
+
 
 }
 
@@ -2466,6 +2468,96 @@ responsive text code !!!
 #footer {
 	padding: 32px 0px;
 }
+
+#footer-empty {
+	background: #fff;
+	padding: 128px 0px;
+}
+
+
+
+
+
+
+
+
+
+#footer {
+    padding: 32px 0px;
+    color: #000;
+    background: var(--footer-background);
+
+}
+
+.footer {
+    margin: auto;
+    max-width: var(--page-max-width);
+    color:var(--footer-text-color);
+    width: 100%;
+}
+
+
+#footer h5 {
+    margin: 16px 0;
+    color:var(--footer-text-color);
+    opacity: 9;
+}
+
+#footer ul.menu-list[class*="column"] {
+    --insert-padding:1028px !important;
+}
+
+#footer ul.menu-list {
+    max-width: var(--page-max-width);
+    margin: 0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex;
+    width: 100%;
+    grid-column: 1 / -1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#year {
+    font-size: 16px;
+    color:var(--footer-text-color);
+}
+
+
+
+
+
+*.copyright {
+    font-size: 16px!important;
+    color:var(--footer-text-color) !important;
+}
+*.copyright:before {
+    font-size: 16px!important;
+    color:var(--footer-text-color) !important;
+    margin: 4px;
+    content: ' \00A9'!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Utilities */ 

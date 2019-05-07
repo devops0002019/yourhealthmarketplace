@@ -1,4 +1,4 @@
-document.documentElement.style .setProperty('--primary', '#c0c2ce');
+document.documentElement.style .setProperty('--primary', '#7A838E');
 document.documentElement.style .setProperty('--secondary', '#ddd');
 document.documentElement.style .setProperty('--tertiary', '#FAFAFA');
 document.documentElement.style .setProperty('--quaternary', '#7a7aff');
@@ -16,15 +16,17 @@ document.documentElement.style .setProperty('--h3-color', '#262626');
 document.documentElement.style .setProperty('--seo-page-title-color', '#fff');
 
 
+
+
+
 const navbar_data = [
   {
-      brand:    "Your Health Marketplace",
+      brand:    "",
   }
 ];
 function navbar_template(navbar) {
   return `
-      
-      <h3 class="text-quaternary">${navbar.brand}</h3>
+      <h3 class="text-quaternary"><span class="company-name"></span></h3>
 `;
 }
 
@@ -40,7 +42,7 @@ function footer_template(foot) {
     return `
     <div class="grid set-cols-1">
         <div class="column start-vertical-between">
-            <p>Copyright 2019. Find Insurance Quotes. All Rights Reserved.</p>
+            <p class="copyright">Copyright 2019.<span class="company-name"></span>. All Rights Reserved.</p>
             <p<b>Disclaimer:</b>Find Insurance Quotes strives to keep its information accurate and up to date. This information may be different than what you see when you visit a financial institution, service provider or specific product’s site. All financial products, shopping products and services are presented without warranty. When evaluating offers, please review the financial institution’s Terms and Conditions. Pre-qualified offers are not binding. If you find discrepancies with your credit score or information from your credit report, please contact TransUnion® directly.</p>
         </div>
     </div>
@@ -48,3 +50,5 @@ function footer_template(foot) {
 }
 document.getElementById("footer").innerHTML = `${footer_data.map(footer_template).join('')}`;
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
