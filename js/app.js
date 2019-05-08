@@ -52,7 +52,7 @@ function footer_template(foot) {
 
         <ul class="column menu-start">
             <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Term of Use</a></li>
+            <li> | <a href="terms.html"> Term of Use</a></li>
         </ul>
         
     </div>

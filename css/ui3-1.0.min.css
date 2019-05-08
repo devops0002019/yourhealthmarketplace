@@ -831,6 +831,7 @@ column
 }
 
 
+
 [class*="column"][class*="menu-start"] {
     --insert-display: flex;
     --insert-justify-content: start;
@@ -838,9 +839,8 @@ column
     --insert-flex-direction: row;
 	--insert-text-align: start;
 	--insert-width: 100%;
-	--a-margin: 8px;
+	--a-margin: 0 8px 0 0 ;
 }
-
 
 
 
